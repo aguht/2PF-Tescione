@@ -1,0 +1,23 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <i class="bi bi-list" style="font-size: 2rem"></i>
+    <span class="fs-4">Menú</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#" *ngIf="ref1" (click)="nuevoE()">
+        <i class="bi bi-plus-circle" style="font-size: 20px" ></i>
+        <span class="fs-6">Nuevo Estudiante</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#">
+        <i class="bi bi-list-ul" style="font-size: 20px"></i>
+        <span class="fs-6">Lista</span>
+      </a>
+    </li>  
+
+  </ul>
+  <hr>
+</div>
