@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { Router } from '@angular/router';
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-sidebar',
@@ -13,17 +14,17 @@ export class SidebarComponent implements OnInit {
 
   @ViewChild("appcomponent") appcomponent: AppComponent;
   
+  constructor(private router:Router) { }
+
+  ngOnInit(): void { }
+
   nuevoE(){
-    this.appcomponent.onClickAdd();
+    this.router.navigate(['/form/form']);
   }
 
-  
-
-  constructor() { }
-
-  ngOnInit(): void {
-
-    
+  showList(){
+    this.router.navigate(['/lista/alumnos'])
   }
+
 
 }

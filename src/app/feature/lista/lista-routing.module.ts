@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListaComponent } from './components/lista.component';
 
 const routes: Routes = [  
-    {path:'lista', component:ListaComponent},
+    {path:'alumnos', component:ListaComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ListaRoutingComponent {}
+export class ListaRoutingModule { }

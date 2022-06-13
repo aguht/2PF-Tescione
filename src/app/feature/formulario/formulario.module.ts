@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioComponent } from './components/formulario.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MaterialModule } from 'src/app/shared/material.module';
-import { FormularioRoutingComponent } from './formulario-routing.module';
+import { FormularioRoutingModule } from './formulario-routing.module';
 import { RouterModule } from '@angular/router';
 
 
@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    FormularioRoutingComponent,
+    FormularioRoutingModule,
     RouterModule
   ]
 })
